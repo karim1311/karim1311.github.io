@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+const nextConfig = {
+    output: 'export',
+    basePath: '/gh-pages-test',
+  }
+  
+  module.exports = nextConfig

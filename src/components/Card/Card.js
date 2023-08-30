@@ -3,7 +3,6 @@
   /* archivo Card.js dentro de carpeta components dentro de carpeta app, dentro de carpeta src*/
 }
 import React from "react";
-import Image from "next/image";
 import "./Card.css";
 import Search from "../Search/Search";
 
@@ -44,12 +43,12 @@ export default function Card({ temperature, cityName, weatherIcon, onCityChange 
         <Search onCityChange={onCityChange} />
         <div className="imagen">
           {weatherIcon && (
-            <Image
+            <img
               src={getWeatherIconUrl(weatherIcon)}
               alt="imagen"
               width={"150"}
               height={"150"}
-            />
+           />
           )}
         </div>
         <div className="temp">{temperature && <div>{temperature}°C</div>}</div>

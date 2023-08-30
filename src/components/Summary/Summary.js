@@ -3,7 +3,6 @@
    */
 }
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
 import "../Summary/Summary.css";
 
 export default function Summary({ city }) {
@@ -166,7 +165,7 @@ export default function Summary({ city }) {
     <div className="d-flex flex-row p-3 gap-4 h-100">
       <div className="d-flex caja p-3 flex-column align-items-center h-60">
         <p className="text-light">Tomorrow</p>
-        <Image
+        <img
           src={getWeatherIconUrl(day1Icon)}
           alt="icono-clima"
           height={62}
@@ -182,7 +181,7 @@ export default function Summary({ city }) {
         <p className="text-light">
           {day2Name}, {day2Number} {day2Month}
         </p>
-        <Image
+        <img
           src={getWeatherIconUrl(day2Icon)}
           alt="icono-clima"
           height={62}
@@ -198,7 +197,7 @@ export default function Summary({ city }) {
         <p className="text-light">
           {day3Name}, {day3Number} {day3Month}
         </p>
-        <Image
+        <img
           src={getWeatherIconUrl(day3Icon)}
           alt="icono-clima"
           height={62}
@@ -214,7 +213,7 @@ export default function Summary({ city }) {
         <p className="text-light">
           {day4Name}, {day4Number} {day4Month}
         </p>
-        <Image
+        <img
           src={getWeatherIconUrl(day4Icon)}
           alt="icono-clima"
           height={62}
@@ -230,7 +229,7 @@ export default function Summary({ city }) {
         <p className="text-light">
           {day5Name}, {day5Number} {day5Month}
         </p>
-        <Image
+        <img
           src={getWeatherIconUrl(day5Icon)}
           alt="icono-clima"
           height={62}
